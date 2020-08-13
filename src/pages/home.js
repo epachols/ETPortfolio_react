@@ -8,6 +8,7 @@ export default function Home() {
         <div style={{padding: 24}}>
             <h3>A little about me: </h3>
             <p>
+                ::FIX THIS:
                 &nbsp;&nbsp;&nbsp; As a Chef-turned-Full Stack Developer I have my hands
                 in the dirt, and a weather eye on the horizon.  Studying medicine imparted an experimental
                 mindset, and 15 years as a culinary professional
