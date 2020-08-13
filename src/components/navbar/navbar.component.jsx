@@ -29,7 +29,7 @@ export default function Navbar() {
         <div className="navbar">
             <img src={Logo} />
             <Dropdown overlay={menu} placement="bottomLeft">
-                <Button>
+                <Button size="large" id="navButton">
                 Navigation
                 <CheckCircleOutlined twoToneColor="#18661e"/>
                 </Button>
