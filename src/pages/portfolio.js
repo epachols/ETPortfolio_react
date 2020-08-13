@@ -4,7 +4,7 @@ import Collapse from '../components/collapse/collapse.component'
 
 export default function Portfolio() {
     return (
-        <div>
+        <div style={{padding: 20}}>
             <h2>Portfolio</h2>
             <Collapse />
         </div>

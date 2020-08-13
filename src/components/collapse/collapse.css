@@ -7,5 +7,5 @@
 .picRow {
   display: flex;
   padding: 10px;
-  /* flex-direction: row; */
+  justify-content: center;
 }
