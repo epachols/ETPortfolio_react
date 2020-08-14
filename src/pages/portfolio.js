@@ -1,20 +1,27 @@
 import React from "react";
-import Router from 'react-router-dom'
-import Project from '../components/project/project.component'
-//images TODO:
-import Paws from '../components/project/pawslife2.png'
-import Emp from '../components/project/employeedirectory.png'
-import Budget from '../components/project/budgettracker.png'
-import Burgers from '../components/project/evsburgers.png'
+import Router from 'react-router-dom';
+import Project from '../components/project/project.component';
+import { Row, Col } from 'antd';
+//images 
+import Paws from '../components/project/pawslife2.png';
+import Emp from '../components/project/employeedirectory.png';
+import Budget from '../components/project/budgettracker.png';
+import Burgers from '../components/project/evsburgers.png';
 import Team from '../components/project/teamtemplateengine.png'
 import Local from '../components/project/weatherprev.png'
+
+import { Collapse } from 'antd';
+const { Panel } = Collapse;
+function callback(key) {
+    console.log(key);
+  }
 
 const projects = {
     pawslife: {
         name: 'PawsLife',
         gitHub: 'https://github.com/rickyg218/PawsLIfe-',
         deployed:'http://pawslife.herokuapp.com/',
-        description:'This application is a social community website of pet owners and pet service providers. Pawslife gives the user the ability to create an account as a pet owner of a dog or cat, and or a pet provider for dogs or cats. As an owner, a user can keep track of all of their pets for which they can book provider services. As a provider, a user can post pet care services for other members of pawslife to book.'
+        description:'This application is a social community website of pet owners and pet service providers, giving users the ability to create an account as a pet owner and/or a pet service provider. As an owner, a user can keep track of all of their pets and can book available provider services. As a provider, a user can post pet care services for other members of pawslife to book.'
     },
     employeedirectory: {
         name: 'Employee Directory (react)',
@@ -50,53 +57,56 @@ const projects = {
 
 export default function Portfolio() {
     return (
-        <>
-            <h2>Portfolio</h2>
-        <div style={{padding: 20, display: "flex"}}>
-            <Project 
+      <>
+        <h2>Portfolio</h2>
+        <div style={{ padding: 20 }}>
+        <Row style={{display: "flex", justifyContent: "center"}}>
+
+        
+            <Project
                 name={projects.pawslife.name}
                 github={projects.pawslife.github}
                 deployed={projects.pawslife.deployed}
                 description={projects.pawslife.description}
                 src={Paws}
             />
-            <Project 
+            <Project
                 name={projects.employeedirectory.name}
                 github={projects.employeedirectory.github}
                 deployed={projects.employeedirectory.deployed}
                 description={projects.employeedirectory.description}
                 src={Emp}
             />
-            <Project 
-                name={projects.budgettracker.name}
-                github={projects.budgettracker.github}
-                deployed={projects.budgettracker.deployed}
-                description={projects.budgettracker.description}
-                src={Budget}
-            />
-            <Project 
-                name={projects.evsburgers.name}
-                github={projects.evsburgers.github}
-                deployed={projects.evsburgers.deployed}
-                description={projects.evsburgers.description}
-                src={Burgers}
-            />
-            <Project 
-                name={projects.teamtemplate.name}
-                github={projects.teamtemplate.github}
-                deployed={projects.teamtemplate.deployed}
-                description={projects.teamtemplate.description}
-                src={Team}
-            />
-            <Project 
-                name={projects.localweather.name}
-                github={projects.localweather.github}
-                deployed={projects.localweather.deployed}
-                description={projects.localweather.description}
-                src={Local}
-            />
-            
+          <Project
+            name={projects.budgettracker.name}
+            github={projects.budgettracker.github}
+            deployed={projects.budgettracker.deployed}
+            description={projects.budgettracker.description}
+            src={Budget}
+          />
+          <Project
+            name={projects.evsburgers.name}
+            github={projects.evsburgers.github}
+            deployed={projects.evsburgers.deployed}
+            description={projects.evsburgers.description}
+            src={Burgers}
+          />
+          <Project
+            name={projects.teamtemplate.name}
+            github={projects.teamtemplate.github}
+            deployed={projects.teamtemplate.deployed}
+            description={projects.teamtemplate.description}
+            src={Team}
+          />
+          <Project
+            name={projects.localweather.name}
+            github={projects.localweather.github}
+            deployed={projects.localweather.deployed}
+            description={projects.localweather.description}
+            src={Local}
+          />
+          </Row>
         </div>
-        </>
-    )
+      </>
+    );
 }
