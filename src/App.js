@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
-import Contact from './pages/contact';
 import Home from './pages/home';
 import Portfolio from './pages/portfolio';
 import Header from './components/header/header.component';
@@ -19,13 +18,6 @@ function App() {
     <hr></hr>  
     <Home />
     <Footer />
-    </Route>
-
-    <Route exact path={"/contact"}>
-      <Header />
-      <hr></hr> 
-      <Contact /> 
-      <Footer />
     </Route>
 
     <Route exact path={"/portfolio"}>

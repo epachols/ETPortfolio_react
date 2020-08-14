@@ -1,7 +1,7 @@
 import React from "react";
-import Router from 'react-router-dom';
+
 import Project from '../components/project/project.component';
-import { Row, Col } from 'antd';
+import { Row } from 'antd';
 //images 
 import Paws from '../components/project/pawslife2.png';
 import Emp from '../components/project/employeedirectory.png';
@@ -10,11 +10,6 @@ import Burgers from '../components/project/evsburgers.png';
 import Team from '../components/project/teamtemplateengine.png'
 import Local from '../components/project/weatherprev.png'
 
-import { Collapse } from 'antd';
-const { Panel } = Collapse;
-function callback(key) {
-    console.log(key);
-  }
 
 const projects = {
     pawslife: {

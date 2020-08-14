@@ -14,11 +14,11 @@ export default function Footer() {
     return (
         <div style={styles}>
            <div>
-                &nbsp;&nbsp;<img style={{height: "10vh"}} src={Crow} />
+                &nbsp;&nbsp;<img style={{height: "10vh"}} src={Crow} alt="Code Crow Svcs"/>
                 &copy; <strong>Evan Pacholski</strong> 
-                &nbsp;&nbsp;<a href="https://github.com/epachols" target="_blank"><i className="fab fa-github-alt"></i></a>
-                &nbsp;&nbsp;<a href="https://www.linkedin.com/in/evan-pacholski-7910481ab/" target="_blank"><i className="fab fa-linkedin"></i></a>
-                &nbsp;&nbsp;<a href="mailto:epacholski86@gmail.com&subject=Hi%20Evan%20-This%20Is%20A%20Portfolio%20Contact&body=Please-get-in-touch-with-me-regarding;" target="_blank"><i className="fas fa-envelope-square"></i></a>
+                &nbsp;&nbsp;<a href="https://github.com/epachols" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-alt"></i></a>
+                &nbsp;&nbsp;<a href="https://www.linkedin.com/in/evan-pacholski-7910481ab/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
+                &nbsp;&nbsp;<a href="mailto:epacholski86@gmail.com&subject=Hi%20Evan%20-This%20Is%20A%20Portfolio%20Contact&body=Please-get-in-touch-with-me-regarding;" target="_blank" rel="noopener noreferrer"><i className="fas fa-envelope-square"></i></a>
            </div>
         </div>
     )

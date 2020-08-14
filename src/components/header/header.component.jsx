@@ -14,10 +14,6 @@ const menu = (
       </Menu.Item>
 
       <Menu.Item>
-        <Link to="/contact">Contact</Link>
-      </Menu.Item>
-
-      <Menu.Item>
         <Link to="/portfolio">Portfolio</Link>
       </Menu.Item>
 
@@ -27,7 +23,7 @@ const menu = (
 export default function Navbar() {
     return (
         <div className="navbar">
-            <img src={Logo} />
+            <img src={Logo} alt="The Code Crow" />
             <Dropdown overlay={menu} placement="bottomLeft">
                 <Button size="large" id="navButton">
                 Navigation
