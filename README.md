@@ -22,7 +22,7 @@
 
   ## Live hosted at [This Link](https://still-harbor-62362.herokuapp.com/) 
 
-  - ![Preview](preview.png)
+  ![Preview](preview.png)
   
   
   ## Contributing:
