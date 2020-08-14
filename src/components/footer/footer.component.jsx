@@ -14,7 +14,7 @@ export default function Footer() {
     return (
         <div style={styles}>
            <div>
-                &nbsp;&nbsp;<img style={{height: "10vh"}} src={Crow} alt="Code Crow Svcs"/>
+                &nbsp;&nbsp;<img style={{height: "8vh"}} src={Crow} alt="Code Crow Svcs"/>
                 &copy; <strong>Evan Pacholski</strong> 
                 &nbsp;&nbsp;<a href="https://github.com/epachols" target="_blank" rel="noopener noreferrer"><i className="fab fa-github-alt"></i></a>
                 &nbsp;&nbsp;<a href="https://www.linkedin.com/in/evan-pacholski-7910481ab/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a>
