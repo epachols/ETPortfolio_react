@@ -59,7 +59,7 @@ export default function Portfolio() {
     return (
       <>
         <h2>Portfolio</h2>
-        <div style={{ padding: 20 }}>
+        <div style={{ minHeight: "80vh", padding: 20 }}>
         <Row style={{display: "flex", justifyContent: "center"}}>
 
         

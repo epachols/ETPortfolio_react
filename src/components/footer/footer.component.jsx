@@ -1,12 +1,25 @@
 import React from 'react'
+import Crow from './crow.png'
+const styles={
+    height: "15vh",
+    paddingTop: "2vh",
+    background: "linear-gradient(264deg, rgba(194,244,255,0.8457982781228055) 0%, rgba(0,112,143,1) 100%)",
+    fontSize: "30px",
+    color: "#eee",
+    position: "bottom",
+    textAlign: "center"
 
+}
 export default function Footer() {
     return (
-        <div>
-           <p>this is a footer
-           1. Make it sticky
-           2. make it styley
-           3. add them links and email</p> 
+        <div style={styles}>
+           <div>
+                &nbsp;&nbsp;<img style={{height: "10vh"}} src={Crow} />
+                &copy; <strong>Evan Pacholski</strong> 
+                &nbsp;&nbsp;<a href="https://github.com/epachols" target="_blank"><i className="fab fa-github-alt"></i></a>
+                &nbsp;&nbsp;<a href="https://www.linkedin.com/in/evan-pacholski-7910481ab/" target="_blank"><i className="fab fa-linkedin"></i></a>
+                &nbsp;&nbsp;<a href="mailto:epacholski86@gmail.com&subject=Hi%20Evan%20-This%20Is%20A%20Portfolio%20Contact&body=Please-get-in-touch-with-me-regarding;" target="_blank"><i className="fas fa-envelope-square"></i></a>
+           </div>
         </div>
     )
 }

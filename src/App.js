@@ -5,7 +5,7 @@ import Contact from './pages/contact';
 import Home from './pages/home';
 import Portfolio from './pages/portfolio';
 import Header from './components/header/header.component';
-// TODO: maybe use, maybe use antdesigns import Footer from './components/footer/footer.component';
+import Footer from './components/footer/footer.component';
 
 
 function App() {
@@ -18,19 +18,21 @@ function App() {
     <Header />
     <hr></hr>  
     <Home />
-    
+    <Footer />
     </Route>
 
     <Route exact path={"/contact"}>
       <Header />
       <hr></hr> 
       <Contact /> 
+      <Footer />
     </Route>
 
     <Route exact path={"/portfolio"}>
       <Header />
       <hr></hr>
       <Portfolio />
+      <Footer />
     </Route>
 
 </Switch>
