@@ -1,11 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
-
 import Contact from './pages/contact';
 import Home from './pages/home';
 import Portfolio from './pages/portfolio';
-import Navbar from './components/navbar/navbar.component';
+import Header from './components/header/header.component';
+// TODO: maybe use, maybe use antdesigns import Footer from './components/footer/footer.component';
+
 
 function App() {
   return (
@@ -14,19 +15,20 @@ function App() {
 
   <Switch>
     <Route exact path={"/"}>
-    <Navbar />
+    <Header />
     <hr></hr>  
     <Home />
+    
     </Route>
 
     <Route exact path={"/contact"}>
-      <Navbar />
+      <Header />
       <hr></hr> 
-      <Contact />
+      <Contact /> 
     </Route>
 
     <Route exact path={"/portfolio"}>
-      <Navbar />
+      <Header />
       <hr></hr>
       <Portfolio />
     </Route>
