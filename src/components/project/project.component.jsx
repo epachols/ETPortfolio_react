@@ -10,6 +10,7 @@ export default function Project(props) {
        <Col xs={24} s={24} m={12} l={8} xl={6}>
 
             <Card
+                className="projectCard"
                 hoverable
                 style={{ width: "90%", paddingTop: "8px", marginBottom: "10px" }}
                 cover={
