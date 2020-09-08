@@ -1,10 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
-import Home from './pages/home';
-import Portfolio from './pages/portfolio';
-import Header from './components/header/header.component';
-import Footer from './components/footer/footer.component';
 
 
 function App() {
@@ -14,17 +10,15 @@ function App() {
 
   <Switch>
     <Route exact path={"/"}>
-    <Header />
-    <hr></hr>  
-    <Home />
-    <Footer />
+    <div>he's dead jim</div>
     </Route>
 
     <Route exact path={"/portfolio"}>
-      <Header />
-      <hr></hr>
-      <Portfolio />
-      <Footer />
+   <div>portfolio's dead jim</div>
+    </Route>
+
+    <Route exact path={"/contact"}>
+   <div>contact's dead jim</div>
     </Route>
 
 </Switch>
