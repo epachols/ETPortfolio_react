@@ -15,10 +15,22 @@ const StyledBurger = styled.div`
     div {
        width: 2rem;
        height: 0.25rem;
-       ${'' /* background-color: white; */}
-       background-color: ${theme.primaryLight};
+       background-color: ${({ open }) => open? theme.primaryHover : theme.primaryLight};
        border-radius: 5px;
-       border-bottom: 1px solid darkgray;
+       ${'' /* border-bottom: 1px solid darkgray; */}
+       transform-origin: 1px;
+       transition: all 0.5s ease;
+
+       &:nth-child(1) {
+           transform: ${({ open }) => open? `rotate(45deg)` : `rotate(0deg)`};
+       }
+       &:nth-child(2) {
+           transform: ${({ open }) => open? `translateX(-100%)` : `translateX(0)`};
+           opacity: ${({ open }) => open? `0` : `1`};
+       }
+       &:nth-child(3) {
+           transform: ${({ open }) => open? `rotate(-45deg)` : `rotate(0deg)`};
+       }
     }
 `
 
