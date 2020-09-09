@@ -1,5 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
+import RightNav from './RightNav/RightNav.component'
 
 const Nav= styled.nav`
 display: flex;
@@ -23,12 +24,7 @@ export default function Navi() {
             <div className="logo">
                 EvBar, FooBar
             </div>
-            <ul>
-                <li>about</li>
-                <li>portfolio</li>
-                <li>portfolio</li>
-                <li>home</li>
-            </ul>
+            <RightNav />
         </Nav>
     )
 }
