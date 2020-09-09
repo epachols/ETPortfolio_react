@@ -4,7 +4,6 @@
   |-------------------------------|
   | [Installation](#installation) |
   |        [Usage](#usage)        |
-  | [Contributing](#contributing) |
   |     [Tests](#tests)           |
   |    [Questions](#questions)    |
   |    [Credits](#credits)        |
@@ -12,30 +11,15 @@
   
   ## Description
   
- Portfolio mkIII made with create-react-app and Ant Design.
+  relies on styled-components and scalable structure rather than a framework.
   
   ## Installation
   
- n/a
-  
+
   
 
-  ## Live hosted at [This Link](https://still-harbor-62362.herokuapp.com/) 
+  ## [Live on Heroku](https://still-harbor-62362.herokuapp.com/) 
 
-  ![Preview](preview.png)
-  
-  
-  ## Contributing:
-   
- Guidelines for contribution (if any): 
-
-   n/a  
-  
-  
-  ## Tests:
-  Command for running tests for this app:
-  
- n/a
   
   
   ## Questions:
