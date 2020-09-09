@@ -10,7 +10,6 @@ position: fixed;
 justify-content: space-between;
 width:100%;
 height: 65px;
-${'' /* border-bottom: 2px solid lightgray; */}
 padding: 0 20px;
 
 .logo {
@@ -22,7 +21,7 @@ export default function Navi() {
     return (
         <Nav>
             <div className="logo">
-                Welcome to crowtown
+                <h3>Welcome</h3>
             </div>
             <Burger />
             
