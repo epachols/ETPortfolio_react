@@ -18,7 +18,7 @@ const StyledBurger = styled.div`
     width: 2rem;
     height: 0.25rem;
     background-color: ${({ open }) =>
-      open ? theme.primaryHover : theme.primaryLight};
+      open ? theme.primaryDark : theme.primaryLight};
     border-radius: 5px;
     ${"" /* border-bottom: 1px solid darkgray; */}
     transform-origin: 1px;
@@ -43,12 +43,12 @@ export default function Burger() {
 
   return (
     <>
-      <StyledBurger open={open} onClick={() => setOpen(!open)}>
+      <StyledBurger open={open} setOpen={setOpen} onClick={() => setOpen(!open)}>
         <div></div>
         <div></div>
         <div></div>
       </StyledBurger>
-      <RightNav open={open}/>
+      <RightNav open={open} setOpen={setOpen} />
     </>
   );
 }

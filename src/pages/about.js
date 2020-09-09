@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+// import Navi from "../components/Navi/Navi.component";
 
 export default function About() {
     return (
-        <div>
+        <>
+         {/* <Navi /> */}
           <div>he's dead jim</div>  
-        </div>
+        </>
     )
 }

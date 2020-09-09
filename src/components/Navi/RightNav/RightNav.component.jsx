@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import {theme} from "../../../theme"
+import {Link} from 'react-router-dom'
+
 const Ul = styled.ul`
     list-style: none;
     display:flex;
@@ -8,7 +10,8 @@ const Ul = styled.ul`
     text-align: center;
 li {
     padding: 18px 10px;
-    color: #0B64A4
+    color: #0B64A4;
+    font-size: 2rem;
 }
 
 @media (max-width: 2000px) {
@@ -27,13 +30,13 @@ li {
 }`
 
 
-export default function RightNav({ open }) {
+export default function RightNav({ open, setOpen }) {
     return (
-            <Ul open={open}>
-                <li>about</li>
+            <Ul open={open} setOpen={setOpen}>
+                <li><Link to="/about" onClick={()=> setOpen(!open)}>about</Link></li>
                 <li>portfolio</li>
                 <li>Contact</li>
-                <li>home</li>
+                <li><Link to="/" onClick={()=> setOpen(!open)}>home</Link></li>
             </Ul>
     )
 }

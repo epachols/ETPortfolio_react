@@ -16,10 +16,10 @@ function App() {
     <ThemeProvider theme={theme}>
         <GlobalStyles />
 
-        <Navi />
 
 
       <Router>
+        <Navi />
         <Switch>
 
         <Route exact path ={"/"}>
