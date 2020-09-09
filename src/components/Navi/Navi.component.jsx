@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import RightNav from './RightNav/RightNav.component'
+import Burger from './Burger/Burger.component'
 
 const Nav= styled.nav`
 display: flex;
@@ -24,6 +25,7 @@ export default function Navi() {
             <div className="logo">
                 EvBar, FooBar
             </div>
+            <Burger />
             <RightNav />
         </Nav>
     )

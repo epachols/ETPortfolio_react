@@ -12,6 +12,9 @@ li {
 }
 
 @media (max-width: 2000px) {
+
+    display:none;
+
     text-Align: left;
     flex-flow: column nowrap;
     position: fixed;
