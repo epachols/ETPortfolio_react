@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import RightNav from './RightNav/RightNav.component'
 import Burger from './Burger/Burger.component'
 
 const Nav= styled.nav`
@@ -26,7 +25,7 @@ export default function Navi() {
                 EvBar, FooBar
             </div>
             <Burger />
-            <RightNav />
+            
         </Nav>
     )
 }

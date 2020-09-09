@@ -12,25 +12,24 @@ li {
 }
 
 @media (max-width: 2000px) {
-
-    display:none;
-
     text-Align: left;
     flex-flow: column nowrap;
     position: fixed;
+    transform: ${({ open }) => open? `translateX(0)`: `translateX(100%)`};
     top: 0;
     right: 0;
     height: 100vh;
     width:50vw;
     padding-top: 4rem;
     background-color: ${theme.primaryLight};
+    transition: transform 0.3s ease-in-out;
     ${'' /* bottom: 0; */}
 }`
 
 
-export default function RightNav() {
+export default function RightNav({ open }) {
     return (
-            <Ul>
+            <Ul open={open}>
                 <li>about</li>
                 <li>portfolio</li>
                 <li>Contact</li>
