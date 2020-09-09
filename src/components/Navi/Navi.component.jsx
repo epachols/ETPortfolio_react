@@ -22,7 +22,7 @@ export default function Navi() {
     return (
         <Nav>
             <div className="logo">
-                Welcome
+                Welcome to crowtown
             </div>
             <Burger />
             

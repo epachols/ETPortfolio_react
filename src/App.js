@@ -6,6 +6,7 @@ import { theme } from "./theme";
 // //routing
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import About from "./pages/about";
+import Home from "./pages/home"
 
 
 
@@ -23,7 +24,8 @@ function App() {
         <Switch>
 
         <Route exact path ={"/"}>
-        Lamont, ya big dummy!
+      
+        <Home/>
         </Route>
 
           <Route exact path={"/about"}>
