@@ -4,15 +4,19 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./global";
 import { theme } from "./theme";
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./App.css";
-import About from "./pages/about";
+// //routing
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import About from "./pages/about";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Router>
         <GlobalStyles />
+
+
+        this here is some idiotic bullshit
+        
+      {/* <Router>
         <Switch>
           <Route exact path={"/"}>
             <About />
@@ -22,7 +26,10 @@ function App() {
             <div>portfolio's dead jim</div>
           </Route>
         </Switch>
-      </Router>
+      </Router> */}
+
+
+
     </ThemeProvider>
   );
 }
