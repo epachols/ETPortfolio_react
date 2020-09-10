@@ -22,7 +22,7 @@ const Ul = styled.ul`
     top: 0;
     right: 0;
     height: 100vh;
-    width: 35vw;
+    width: 25vw;
     padding-top: 4rem;
     background-color: ${theme.primaryLight};
     transition: transform 0.3s ease-in-out;
@@ -37,17 +37,13 @@ export default function RightNav({ open, setOpen }) {
   return (
     <Ul open={open} setOpen={setOpen}>
       <li>
-        <Link to="/about" onClick={() => setOpen(!open)}>
+        <Link to="/" onClick={() => setOpen(!open)}>
           <span style={{color:`#0b64a4`}}>about</span>
         </Link>
       </li>
       <li><span style={{color:`#0b64a4`}}>portfolio</span></li>
-      <li><span style={{color:`#0b64a4`}}>Contact</span></li>
-      <li>
-        <Link to="/" onClick={() => setOpen(!open)}>
-        <span style={{color:`#0b64a4`}}>home</span>
-        </Link>
-      </li>
+      <li><span style={{color:`#0b64a4`}}>contact</span></li>
+
     </Ul>
   );
 }
