@@ -4,37 +4,37 @@ import styled from 'styled-components';
 
 const StyledHome = styled.div`
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-around;
-    align-items: center;
+    ${'' /* align-items: center; */}
     background-image: url(${CrowBg});
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     height: 90vh;
     margin-top: 10vh;
-    width: 98vw;
+    width: 100vw;
+    padding-top: 18vh;
+    padding-left: 5vw;
+
+    h4 {
+        margin-left: 1rem;
+        max-width: 60vw;
+        flex-flow: wrap;
+    }
 
 `
 
 export default function Home() {
-  const styles = {
-    display: `flex`,
-    justifyContent: `space-around`,
-    alignItems: `center`,
-    backgroundImage: `url(${CrowBg})`,
-    backgroundRepeat: `no-repeat`,
-    backgroundSize: `cover`,
-    backgroundPosition: `left`,
-    height: `90vh`,
-    marginTop: `10vh`,
-    width: `98vw`,
-  };
+
   return (
     <StyledHome>
-      <div>
+        <div>
         <h1>Hello!</h1>
         <h4>I'm Evan, a Full stack Web Developer</h4>
-      </div>
+
+        </div>
+    
     </StyledHome>
   );
 }

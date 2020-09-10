@@ -22,11 +22,14 @@ const Ul = styled.ul`
     top: 0;
     right: 0;
     height: 100vh;
-    width: 50vw;
+    width: 35vw;
     padding-top: 4rem;
     background-color: ${theme.primaryLight};
     transition: transform 0.3s ease-in-out;
-    ${"" /* bottom: 0; */}
+  }
+
+  @media (max-width: 800px) {
+      width:70vw;
   }
 `;
 
